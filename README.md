@@ -11,7 +11,6 @@ colcon the relavant packages
 sudo apt install ros-humble-moveit
 sudo apt install ros-humble-moveit-ros-perception
 colcon build --packages-select moveit_task_constructor_core
-
 colcon build --packages-select moveit2_tutorials
 rosdep install -r --from-paths . --ignore-src --rosdistro $ROS_DISTRO -y
 ```
