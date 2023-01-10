@@ -24,5 +24,5 @@ the code is in version 91bfdd2c5587abdeb0d0be4182a56303544139ad
 
 ## 2. the ros2 launch with python file 
 this method is based on 
-https://moveit.picknik.ai/humble/doc/examples/move_group_interface/move_group_interface_tutorial.html
+https://github.com/ros-planning/moveit2_tutorials/tree/main/doc/examples/move_group_python_interface
 the code is in version 
