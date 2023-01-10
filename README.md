@@ -6,7 +6,15 @@ git clone https://github.com/ros-planning/moveit2_tutorials.git
 ```shell
 git clone https://github.com/ros-planning/moveit_task_constructor.git
 ```
+colcon the relavant packages
+```shell
+sudo apt install ros-humble-moveit
+sudo apt install ros-humble-moveit-ros-perception
+colcon build --packages-select moveit_task_constructor_core
 
+colcon build --packages-select moveit2_tutorials
+rosdep install -r --from-paths . --ignore-src --rosdistro $ROS_DISTRO -y
+```
 
 # constrain_test
 In this pository I tested three different possible ways to run the planning constrain
