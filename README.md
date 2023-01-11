@@ -26,3 +26,8 @@ the code is in version 91bfdd2c5587abdeb0d0be4182a56303544139ad
 this method is based on 
 https://github.com/ros-planning/moveit2_tutorials/tree/main/doc/examples/move_group_python_interface
 the code is in version 
+
+## 3. the ros2 launch with c++ file
+this method is based on moveit2_tutorials on rolling
+https://github.com/ros-planning/moveit2_tutorials
+can be launched successfully, however still have problem on planning, on version 
