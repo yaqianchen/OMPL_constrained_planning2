@@ -85,6 +85,7 @@ add_subdirectory(doc/examples/moveit_cpp)
 # add_subdirectory(doc/examples/collision_environments)
 # add_subdirectory(doc/examples/visualizing_collisions)
 # add_subdirectory(doc/examples/bullet_collision_checker)
+add_subdirectory(doc/examples/using_ompl_constrained_planning)
 add_subdirectory(doc/examples/realtime_servo)
 
 ament_export_dependencies(
