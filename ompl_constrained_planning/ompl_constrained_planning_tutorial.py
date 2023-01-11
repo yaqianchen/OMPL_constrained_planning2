@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Software License Agreement (BSD License)
 #
@@ -37,7 +37,7 @@
 from __future__ import print_function
 
 import sys
-import rospy
+import rclpy
 import moveit_commander
 import moveit_msgs.msg
 import sensor_msgs.msg
@@ -68,19 +68,19 @@ class ConstrainedPlanningTutorial(object):
         """Start the ROS node and create object to handle the robot and the planning scene."""
 
         moveit_commander.roscpp_initialize(sys.argv)
-        rospy.init_node("ompl_constrained_planning_example", anonymous=True)
+        rclpy.init_node("ompl_constrained_planning_example", anonymous=True)
 
         self.robot = moveit_commander.RobotCommander()
         self.move_group = moveit_commander.MoveGroupCommander(group_name)
         self.scene = moveit_commander.PlanningSceneInterface()
 
         # Create a publisher to visualize the position constraints in Rviz
-        self.marker_publisher = rospy.Publisher(
+        self.marker_publisher = rclpy.Publisher(
             "/visualization_marker",
             visualization_msgs.msg.Marker,
             queue_size=20,
         )
-        rospy.sleep(0.5)  # publisher needs some time to connect Rviz
+        rclpy.sleep(0.5)  # publisher needs some time to connect Rviz
         self.remove_all_markers()
         self.marker_id_counter = 0  # give each marker a unique idea
 
@@ -99,7 +99,7 @@ class ConstrainedPlanningTutorial(object):
 
         # Now create a robot state from these joint positions
         joint_state = sensor_msgs.msg.JointState()
-        joint_state.header.stamp = rospy.Time.now()
+        joint_state.header.stamp = rclpy.Time.now()
         joint_state.header.frame_id = self.move_group.get_pose_reference_frame()
         joint_state.name = [key for key in ready.keys()]
         joint_state.position = [val for val in ready.values()]
@@ -244,7 +244,7 @@ class ConstrainedPlanningTutorial(object):
 
         # setup cube / box marker type
         marker = visualization_msgs.msg.Marker()
-        marker.header.stamp = rospy.Time.now()
+        marker.header.stamp = rclpy.Time.now()
         marker.ns = "/"
         marker.id = self.marker_id_counter
         marker.type = visualization_msgs.msg.Marker.CUBE
@@ -267,7 +267,7 @@ class ConstrainedPlanningTutorial(object):
 
         # setup sphere marker type
         marker = visualization_msgs.msg.Marker()
-        marker.header.stamp = rospy.Time.now()
+        marker.header.stamp = rclpy.Time.now()
         marker.ns = "/"
         marker.id = self.marker_id_counter
         marker.type = visualization_msgs.msg.Marker.SPHERE
@@ -289,7 +289,7 @@ class ConstrainedPlanningTutorial(object):
         """Utility function to remove all Markers that we potentially published in a previous run of this script."""
         # setup cube / box marker type
         marker = visualization_msgs.msg.Marker()
-        marker.header.stamp = rospy.Time.now()
+        marker.header.stamp = rclpy.Time.now()
         marker.ns = "/"
         # marker.id = 0
         # marker.type = visualization_msgs.msg.Marker.CUBE
@@ -307,12 +307,12 @@ class ConstrainedPlanningTutorial(object):
         self.scene.add_box(self.obstacle_name, box_pose, size=(0.2, 0.4, 0.1))
 
         # Give the planning scene some time to update
-        rospy.sleep(0.5)
+        rclpy.sleep(0.5)
 
     def remove_obstacle(self):
         self.scene.remove_world_object(self.obstacle_name)
         # Give the planning scene some time to update
-        rospy.sleep(0.5)
+        rclpy.sleep(0.5)
 
     def create_pose_goal_under_obstacle(self):
         self.move_group.clear_pose_targets()

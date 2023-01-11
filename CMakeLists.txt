@@ -8,6 +8,7 @@ moveit_package()
 find_package(Eigen3 REQUIRED)
 find_package(Boost REQUIRED system filesystem date_time thread)
 find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
 find_package(control_msgs REQUIRED)
 find_package(moveit_core REQUIRED)
 find_package(moveit_task_constructor_core REQUIRED)
@@ -23,6 +24,7 @@ find_package(geometric_shapes REQUIRED)
 #find_package(pcl_conversions REQUIRED)
 #find_package(rosbag REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rclpy REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(tf2_ros REQUIRED)
@@ -35,7 +37,9 @@ set(THIS_PACKAGE_INCLUDE_DIRS
 
 set(THIS_PACKAGE_INCLUDE_DEPENDS
   ament_cmake
+  ament_cmake_python
   rclcpp
+  rclpy
   rclcpp_action
   tf2_geometry_msgs
   tf2_ros
@@ -77,6 +81,7 @@ add_subdirectory(doc/examples/robot_model_and_robot_state)
 # add_subdirectory(doc/examples/trajopt_planner)
 # add_subdirectory(doc/examples/creating_moveit_plugins/lerp_motion_planner)
 add_subdirectory(doc/examples/moveit_cpp)
+# add_subdirectory(ompl_constrained_planning)
 # add_subdirectory(doc/examples/collision_environments)
 # add_subdirectory(doc/examples/visualizing_collisions)
 # add_subdirectory(doc/examples/bullet_collision_checker)
@@ -87,5 +92,19 @@ ament_export_dependencies(
 )
 
 ament_export_include_directories(include)
+
+install(
+  DIRECTORY config include launch maps media meshes models params rviz ompl_constrained_planning src urdf worlds
+  DESTINATION share/${PROJECT_NAME}
+)
+ 
+# Install Python modules
+ament_python_install_package(${PROJECT_NAME})
+ 
+# Install Python executables
+install(PROGRAMS
+  ompl_constrained_planning/ompl_constrained_planning_tutorial.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 ament_package()
