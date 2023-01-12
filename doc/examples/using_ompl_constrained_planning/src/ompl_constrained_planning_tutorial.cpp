@@ -54,10 +54,10 @@ int main(int argc, char** argv)
   moveit_visual_tools.prompt("Press 'Next' in the RvizVisualToolsGui window to start with the box constraint example");
 
   //====================================================================================================================================================================
-  moveit_visual_tools.prompt("finished the initialization, and ready to get the first planning problem");
+  // moveit_visual_tools.prompt("finished the initialization, and ready to get the first planning problem");
   // Create the first planning problem
   auto target_pose = get_relative_pose(0.0, 0.3, -0.3);
-  std::cout << "x " << target_pose.pose.position.x < "y " << target_pose.pose.position.y << "z " << target_pose.pose.position.z << std::endl;
+  std::cout << "x " << target_pose.pose.position.x << "y " << target_pose.pose.position.y << "z " << target_pose.pose.position.z << std::endl;
 
   // Let's try the simple box constraints first!
   moveit_msgs::msg::PositionConstraint box_constraint;
@@ -109,7 +109,7 @@ int main(int argc, char** argv)
   reset_demo();
 
   //====================================================================================================================================================================
-  moveit_visual_tools.prompt("finished the first demo and ready to get the second planning problem");
+  // moveit_visual_tools.prompt("finished the first demo and ready to get the second planning problem");
   // In the second problem we plan with the end-effector constrained to a plane.
   // We need to create a pose goal that lies in this plane.
   // The plane is tilted by 45 degrees, so moving an equal amount in the y and z direction should be ok.
@@ -171,7 +171,7 @@ int main(int argc, char** argv)
   // We can also plan along a line. We can use the same pose as last time.
 
   //====================================================================================================================================================================
-  moveit_visual_tools.prompt("finished the second demo and ready to get the third planning problem");
+  // moveit_visual_tools.prompt("finished the second demo and ready to get the third planning problem");
   target_pose = get_relative_pose(0.0, 0.3, -0.3);
 
   // Building on the previous constraint, we can make it a line, by also reducing the dimension of the box in the x-direction.
@@ -215,7 +215,7 @@ int main(int argc, char** argv)
   // Finally, we can place constraints on orientation.
   // Set the target pose to be the other side of the robot
   //====================================================================================================================================================================
-  moveit_visual_tools.prompt("finished the third demo and ready to get the forth planning problem");
+  // moveit_visual_tools.prompt("finished the third demo and ready to get the forth planning problem");
   target_pose = get_relative_pose(-0.6, 0.1, 0);
 
   // Create an orientation constraint
