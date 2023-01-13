@@ -40,3 +40,8 @@ open another terminal
 ```shell
 ros2 launch moveit2_tutorials ompl_constrained_planning.launch.py
 ```
+## Final Version
+```shell
+ros2 launch moveit2_tutorials ompl_constrained_planning.launch.py
+```
+[Screencast from 01-12-2023 09:48:30 PM.webm](https://user-images.githubusercontent.com/48436877/212227127-96127be6-26f6-4706-9fb7-9784dd5d80fc.webm)
