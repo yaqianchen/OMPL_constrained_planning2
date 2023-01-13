@@ -51,13 +51,14 @@ int main(int argc, char** argv)
 
   reset_demo();
   moveit_visual_tools.loadRemoteControl();
+  int test_int = 1;
+  RCLCPP_INFO(get_logger(),"the test integer is, s% ", std::to_string(test_int));
   moveit_visual_tools.prompt("Press 'Next' in the RvizVisualToolsGui window to start with the box constraint example");
 
   //====================================================================================================================================================================
   // moveit_visual_tools.prompt("finished the initialization, and ready to get the first planning problem");
   // Create the first planning problem
   auto target_pose = get_relative_pose(0.0, 0.3, -0.3);
-  std::cout << "x " << target_pose.pose.position.x << "y " << target_pose.pose.position.y << "z " << target_pose.pose.position.z << std::endl;
 
   // Let's try the simple box constraints first!
   moveit_msgs::msg::PositionConstraint box_constraint;
