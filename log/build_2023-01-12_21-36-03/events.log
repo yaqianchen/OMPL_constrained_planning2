@@ -1,0 +1,136 @@
+[0.000000] (-) TimerEvent: {}
+[0.000072] (moveit2_tutorials) JobQueued: {'identifier': 'moveit2_tutorials', 'dependencies': OrderedDict()}
+[0.000087] (moveit2_tutorials) JobStarted: {'identifier': 'moveit2_tutorials'}
+[0.097884] (-) TimerEvent: {}
+[0.161486] (moveit2_tutorials) JobProgress: {'identifier': 'moveit2_tutorials', 'progress': 'cmake'}
+[0.161729] (moveit2_tutorials) Command: {'cmd': ['/usr/bin/cmake', '/home/lucy/moveit_tutorial/src/moveit2_tutorials', '-DCMAKE_INSTALL_PREFIX=/home/lucy/moveit_tutorial/src/moveit2_tutorials/install/moveit2_tutorials'], 'cwd': '/home/lucy/moveit_tutorial/src/moveit2_tutorials/build/moveit2_tutorials', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lucy'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lucy'), ('OLDPWD', '/home/lucy/moveit_tutorial/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1936'), ('SYSTEMD_EXEC_PID', '2114'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4691'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucy'), ('JOURNAL_STREAM', '8:85487'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lucy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lucy-XPS-8950:@/tmp/.ICE-unix/2095,unix/lucy-XPS-8950:/tmp/.ICE-unix/2095'), ('INVOCATION_ID', '2ac31df427d34cc1854ce9d436e15ec7'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.R31PY1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:37524042-cdfd-4103-a003-9dba0b4d3b6a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lucy/moveit_tutorial/src/moveit2_tutorials/build/moveit2_tutorials'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.198003] (-) TimerEvent: {}
+[0.298458] (-) TimerEvent: {}
+[0.399081] (-) TimerEvent: {}
+[0.499624] (-) TimerEvent: {}
+[0.600151] (-) TimerEvent: {}
+[0.700681] (-) TimerEvent: {}
+[0.801218] (-) TimerEvent: {}
+[0.901794] (-) TimerEvent: {}
+[0.929637] (moveit2_tutorials) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[1.001974] (-) TimerEvent: {}
+[1.102427] (-) TimerEvent: {}
+[1.202929] (-) TimerEvent: {}
+[1.303370] (-) TimerEvent: {}
+[1.375231] (moveit2_tutorials) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[1.403540] (-) TimerEvent: {}
+[1.504022] (-) TimerEvent: {}
+[1.604542] (-) TimerEvent: {}
+[1.653513] (moveit2_tutorials) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.704749] (-) TimerEvent: {}
+[1.805222] (-) TimerEvent: {}
+[1.814392] (moveit2_tutorials) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.829348] (moveit2_tutorials) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.830143] (moveit2_tutorials) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.852508] (moveit2_tutorials) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.868268] (moveit2_tutorials) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.905415] (-) TimerEvent: {}
+[2.005942] (-) TimerEvent: {}
+[2.106472] (-) TimerEvent: {}
+[2.182746] (moveit2_tutorials) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.186477] (moveit2_tutorials) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.186556] (moveit2_tutorials) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.186787] (moveit2_tutorials) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.206645] (-) TimerEvent: {}
+[2.241941] (moveit2_tutorials) StdoutLine: {'line': b'-- Found moveit_common: 2.5.4 (/opt/ros/humble/share/moveit_common/cmake)\n'}
+[2.276426] (moveit2_tutorials) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.306771] (-) TimerEvent: {}
+[2.407185] (-) TimerEvent: {}
+[2.483469] (moveit2_tutorials) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[2.507363] (-) TimerEvent: {}
+[2.607716] (-) TimerEvent: {}
+[2.708217] (-) TimerEvent: {}
+[2.808691] (-) TimerEvent: {}
+[2.818231] (moveit2_tutorials) StdoutLine: {'line': b'-- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  \n'}
+[2.838584] (moveit2_tutorials) StdoutLine: {'line': b'-- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) \n'}
+[2.838726] (moveit2_tutorials) StdoutLine: {'line': b'-- BACKWARD_HAS_UNWIND=1\n'}
+[2.838790] (moveit2_tutorials) StdoutLine: {'line': b'-- BACKWARD_HAS_BACKTRACE=0\n'}
+[2.838846] (moveit2_tutorials) StdoutLine: {'line': b'-- BACKWARD_HAS_BACKTRACE_SYMBOL=0\n'}
+[2.838898] (moveit2_tutorials) StdoutLine: {'line': b'-- BACKWARD_HAS_DW=1\n'}
+[2.838951] (moveit2_tutorials) StdoutLine: {'line': b'-- BACKWARD_HAS_BFD=0\n'}
+[2.839652] (moveit2_tutorials) StdoutLine: {'line': b'-- Found Backward: /opt/ros/humble/share/backward_ros/cmake  \n'}
+[2.840138] (moveit2_tutorials) StderrLine: {'line': b"\x1b[0mmoveit2_tutorials: You did not request a specific build type: Choosing 'Release' for maximum performance\x1b[0m\n"}
+[2.908907] (-) TimerEvent: {}
+[3.009322] (-) TimerEvent: {}
+[3.109861] (-) TimerEvent: {}
+[3.210321] (-) TimerEvent: {}
+[3.310737] (-) TimerEvent: {}
+[3.411158] (-) TimerEvent: {}
+[3.511694] (-) TimerEvent: {}
+[3.580830] (moveit2_tutorials) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time thread \n'}
+[3.611911] (-) TimerEvent: {}
+[3.620028] (moveit2_tutorials) StdoutLine: {'line': b'-- Found control_msgs: 4.1.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[3.712098] (-) TimerEvent: {}
+[3.812491] (-) TimerEvent: {}
+[3.829777] (moveit2_tutorials) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.839703] (moveit2_tutorials) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.861877] (moveit2_tutorials) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.912555] (-) TimerEvent: {}
+[3.912878] (moveit2_tutorials) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.928901] (moveit2_tutorials) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.012724] (-) TimerEvent: {}
+[4.113046] (-) TimerEvent: {}
+[4.213354] (-) TimerEvent: {}
+[4.313579] (-) TimerEvent: {}
+[4.347603] (moveit2_tutorials) StdoutLine: {'line': b'-- Found moveit_core: 2.5.4 (/opt/ros/humble/share/moveit_core/cmake)\n'}
+[4.413798] (-) TimerEvent: {}
+[4.421824] (moveit2_tutorials) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[4.488480] (moveit2_tutorials) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[4.513935] (-) TimerEvent: {}
+[4.614337] (-) TimerEvent: {}
+[4.714764] (-) TimerEvent: {}
+[4.719001] (moveit2_tutorials) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.755266] (moveit2_tutorials) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.814919] (-) TimerEvent: {}
+[4.915302] (-) TimerEvent: {}
+[4.983808] (moveit2_tutorials) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.015447] (-) TimerEvent: {}
+[5.027167] (moveit2_tutorials) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.050095] (moveit2_tutorials) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.089070] (moveit2_tutorials) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.115643] (-) TimerEvent: {}
+[5.216088] (-) TimerEvent: {}
+[5.316369] (-) TimerEvent: {}
+[5.323192] (moveit2_tutorials) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[5.416521] (-) TimerEvent: {}
+[5.516827] (-) TimerEvent: {}
+[5.525418] (moveit2_tutorials) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[5.525594] (moveit2_tutorials) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[5.616959] (-) TimerEvent: {}
+[5.717170] (-) TimerEvent: {}
+[5.817390] (-) TimerEvent: {}
+[5.917603] (-) TimerEvent: {}
+[6.017867] (-) TimerEvent: {}
+[6.118055] (-) TimerEvent: {}
+[6.218217] (-) TimerEvent: {}
+[6.315938] (moveit2_tutorials) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[6.316033] (moveit2_tutorials) StdoutLine: {'line': b'See also "/home/lucy/moveit_tutorial/src/moveit2_tutorials/build/moveit2_tutorials/CMakeFiles/CMakeOutput.log".\n'}
+[6.316070] (moveit2_tutorials) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[6.316098] (moveit2_tutorials) StderrLine: {'line': b'  By not providing "Findmoveit_task_constructor_core.cmake" in\n'}
+[6.316121] (moveit2_tutorials) StderrLine: {'line': b'  CMAKE_MODULE_PATH this project has asked CMake to find a package\n'}
+[6.316142] (moveit2_tutorials) StderrLine: {'line': b'  configuration file provided by "moveit_task_constructor_core", but CMake\n'}
+[6.316164] (moveit2_tutorials) StderrLine: {'line': b'  did not find one.\n'}
+[6.316187] (moveit2_tutorials) StderrLine: {'line': b'\n'}
+[6.316209] (moveit2_tutorials) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[6.316232] (moveit2_tutorials) StderrLine: {'line': b'  "moveit_task_constructor_core" with any of the following names:\n'}
+[6.316254] (moveit2_tutorials) StderrLine: {'line': b'\n'}
+[6.316276] (moveit2_tutorials) StderrLine: {'line': b'    moveit_task_constructor_coreConfig.cmake\n'}
+[6.316297] (moveit2_tutorials) StderrLine: {'line': b'    moveit_task_constructor_core-config.cmake\n'}
+[6.316318] (moveit2_tutorials) StderrLine: {'line': b'\n'}
+[6.316339] (moveit2_tutorials) StderrLine: {'line': b'  Add the installation prefix of "moveit_task_constructor_core" to\n'}
+[6.316360] (moveit2_tutorials) StderrLine: {'line': b'  CMAKE_PREFIX_PATH or set "moveit_task_constructor_core_DIR" to a directory\n'}
+[6.316380] (moveit2_tutorials) StderrLine: {'line': b'  containing one of the above files.  If "moveit_task_constructor_core"\n'}
+[6.316400] (moveit2_tutorials) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[6.316421] (moveit2_tutorials) StderrLine: {'line': b'  installed.\n'}
+[6.316441] (moveit2_tutorials) StderrLine: {'line': b'\n'}
+[6.316461] (moveit2_tutorials) StderrLine: {'line': b'\x1b[0m\n'}
+[6.318314] (-) TimerEvent: {}
+[6.321687] (moveit2_tutorials) CommandEnded: {'returncode': 1}
+[6.418995] (-) TimerEvent: {}
+[6.459123] (moveit2_tutorials) JobEnded: {'identifier': 'moveit2_tutorials', 'rc': 1}
+[6.469809] (-) EventReactorShutdown: {}

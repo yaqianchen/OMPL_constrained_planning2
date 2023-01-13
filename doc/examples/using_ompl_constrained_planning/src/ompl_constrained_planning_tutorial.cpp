@@ -51,8 +51,6 @@ int main(int argc, char** argv)
 
   reset_demo();
   moveit_visual_tools.loadRemoteControl();
-  int test_int = 1;
-  RCLCPP_INFO(get_logger(),"the test integer is, s% ", std::to_string(test_int));
   moveit_visual_tools.prompt("Press 'Next' in the RvizVisualToolsGui window to start with the box constraint example");
 
   //====================================================================================================================================================================
@@ -64,6 +62,8 @@ int main(int argc, char** argv)
   moveit_msgs::msg::PositionConstraint box_constraint;
   box_constraint.header.frame_id = move_group_interface.getPoseReferenceFrame();
   box_constraint.link_name = move_group_interface.getEndEffectorLink();
+  RCLCPP_INFO_STREAM(LOGGER, "constraint link name is =============================== " << box_constraint.link_name);
+  // the output is "panda_link8"
   shape_msgs::msg::SolidPrimitive box;
   box.type = shape_msgs::msg::SolidPrimitive::BOX;
   box.dimensions = { 0.1, 0.4, 0.4 };
