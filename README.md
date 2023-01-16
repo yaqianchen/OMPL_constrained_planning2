@@ -4,7 +4,7 @@ download moveit2_tutorials and moveit_task_constructor
 git clone https://github.com/ros-planning/moveit2_tutorials.git
 ```
 ```shell
-git clone https://github.com/ros-planning/moveit_task_constructor.git
+git clone https://github.com/ros-planning/moveit_task_constructor.git -b ros2
 ```
 colcon the relavant packages
 ```shell
