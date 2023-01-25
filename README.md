@@ -20,3 +20,11 @@ rosdep install -r --from-paths . --ignore-src --rosdistro $ROS_DISTRO -y
 ros2 launch moveit2_tutorials ompl_constrained_planning.launch.py
 ```
 [Screencast from 01-12-2023 09:48:30 PM.webm](https://user-images.githubusercontent.com/48436877/212227127-96127be6-26f6-4706-9fb7-9784dd5d80fc.webm)
+
+# move group interface
+```shell
+ros2 launch moveit2_tutorials move_group.launch.py
+```
+```shell
+ros2 launch moveit2_tutorials move_group_interface_tutorial.launch.py
+```
